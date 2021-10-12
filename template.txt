@@ -1,0 +1,15 @@
+#! /bin/bash
+
+DATE=$(date)
+echo -e "Please provide filename you want to create: \c"
+read -r file
+touch shell-scripting/$file.sh
+echo '#!/bin/bash' >   shell-scripting/$file.sh
+echo '#Purpose:' >>   shell-scripting/$file.sh
+echo '#Version:' >>   shell-scripting/$file.sh
+echo '#Created Date:'>> `date` >>  shell-scripting/$file.sh
+echo '#Modified Date: ' >>   shell-scripting/$file.sh
+echo '#Author: Mohd. Faisal Suleman' >>   shell-scripting/$file.sh
+echo '# START #' >>  shell-scripting/$file.sh
+echo '# END #' >>   shell-scripting/$file.sh
+
